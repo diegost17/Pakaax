@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vasos Eco-Comestibles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+          <div class="logo-container">
+            <img src="logo5.png" alt="Logo Vasos Eco" class="logo">
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Nosotros</a></li>
+            <li><a href="pedido.html">Pedido</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+          </ul>
+        </nav>
+        <h1>Pedidos</h1>
+      </header>
+
+  <main>
+    <section id="inicio">
+      <h1>Bienvenido a Vasos Biodegradables y Comestibles</h1>
+      <p>Innovación amigable con el planeta 🌍</p>
+    </section>
+
+    <!-- Más secciones como nosotros, ayuda, dirección, etc. -->
+
+    <section id="pedido" class="pedido-section">
+      <div class="pedido-container">
+        <div class="pedido-formulario">
+          <h2>Haz tu pedido</h2>
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto" required>
+              <option value="">Selecciona un producto</option>
+              <option value="vaso-pequeno">Vaso pequeño</option>
+              <option value="vaso-mediano">Vaso mediano</option>
+              <option value="vaso-grande">Vaso grande</option>
+            </select>
+    
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+    
+            <button type="submit">Enviar pedido</button>
+          </form>
+        </div>
+    
+        <div class="pedido-imagen">
+          <img src="pedido-imagen.jpg" alt="Imagen de vasos" />
+        </div>
+
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vasos Eco-Comestibles</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
