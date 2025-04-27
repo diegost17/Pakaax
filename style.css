@@ -107,7 +107,7 @@
   }
 
   .contenido-extra p {
-    margin: 20px left 100 right; /* arriba, derecha, abajo, izquierda */
+    margin: 20px left  right; /* arriba, derecha, abajo, izquierda */
     font-size: 1.1rem;
     max-width: 800px;
   }
@@ -119,7 +119,7 @@
   header {
     background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 10px 20px;
+    padding: 0px 0px;
     position: sticky;
     align-items: center;
     top: 0;
@@ -136,6 +136,9 @@
   
   .logo-container {
     flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 80px;
   }
   
   .logo {
@@ -145,8 +148,11 @@
   }
   
   .nav-links {
+    padding-right: 230px;
+    flex: 2;
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 25px;
   }
   
@@ -155,7 +161,8 @@
     text-decoration: none;
     color: #dbe3e2;
     font-weight: bold;
-    padding: 8px 12px;
+    padding: 10px 12px;
+    font-size: 18 px;
     transition: background 0.3s;
   }
   
@@ -163,7 +170,49 @@
     background: #66a573;
     border-radius: 5px;
   }
+
+  /* ----------------Botones--------------------- */
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0px;
+    padding-right: 80px;
+  }
   
+  .language-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .language-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .contact-btn {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .contact-btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* ---------------------------------------- */
   main {
     padding: 0;
   }
