@@ -11,3 +11,22 @@ document.getElementById('pedidoForm').addEventListener('submit', function(event)
     document.getElementById('pedidoForm').reset();
   });
   
+  const languageBtn = document.getElementById('languageBtn');
+  const languageMenu = document.getElementById('languageMenu');
+  const languageSelector = document.getElementById('languageSelector');
+
+  languageBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    languageMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!languageSelector.contains(e.target)) {
+      languageMenu.classList.add('hidden');
+    }
+  });
+
+  // Opcional: ocultar al salir con el mouse
+  languageSelector.addEventListener('mouseleave', () => {
+    languageMenu.classList.add('hidden');
+  });

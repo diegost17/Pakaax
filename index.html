@@ -3,6 +3,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Vasos Eco-Comestibles</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,19 +19,22 @@
         <li><a href="pedido.html">Pedido</a></li>
         <li><a href="ayuda.html">Ayuda</a></li>
       </ul>
-      <nav class="navbar">
-        <div class="nav-buttons">
-          <div class="language-selector">
-            <button class="language-btn">
-              <span>🌎</span> Idioma
-            </button>
+      <div class="nav-buttons">
+        <div class="language-selector" id="languageSelector">
+          <button class="language-btn" id="languageBtn">
+            <span>🌎</span> Idioma
+          </button>
+          <div class="language-menu hidden" id="languageMenu">
+            <a href="#" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w40/mx.png" width="20"> Español</a>
+            <a href="#" class="lang-option" data-lang="en"><img src="https://flagcdn.com/w40/us.png" width="20"> English</a>
           </div>
-      
-          <a href="contacto.html" class="contact-btn">Contáctanos</a>
         </div>
-      </nav>
+      
+        <a href="contacto.html" class="contact-btn">Contáctanos</a>
+      </div>      
     </nav>
    </header>
+
   <main>
     <section class="hero">
       <video autoplay muted loop playsinline>
@@ -45,8 +49,20 @@
         </div>
       </div>
     </section>
+    <div class="social-icons">
+      <a href="https://wa.me/5561606212" target="_blank" class="whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/pakaax.2025" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/diego.Abreo.Garcia.41" target="_blank" class="facebook">
+        <i class="fab fa-facebook-f"></i> <!-- usa 'fa-facebook-f' para mejor proporción -->
+      </a>
+    </div>
+       
 
-    <section id="Sobre nosotros" class="nosotros-section">
+    <section id="Sobre_nosotros" class="nosotros-section">
       <div class="nosotros-container">
         <div class="mision">
           <img src="mision.png" alt="mision">
@@ -88,7 +104,7 @@
           <h3 class="subtitulo">Alcance de nuestros servicios</h3>
           <h2 class="titulo">Todo en un solo proveedor.</h2>
           <p>
-            OLTECH ofrece servicios integrales en sector salud público y privado. Se encarga de ser un solo proveedor responsable del equipamiento y las diferentes tecnologías contenidas en un proyecto de implementación o ampliación.
+            PAKAAX ofrece servicios integrales en sector salud público y privado. Se encarga de ser un solo proveedor responsable del equipamiento y las diferentes tecnologías contenidas en un proyecto de implementación o ampliación.
           </p>
           <a href="#" class="boton">Ver productos</a>
         </div>
