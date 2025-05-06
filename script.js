@@ -11,22 +11,33 @@ document.getElementById('pedidoForm').addEventListener('submit', function(event)
     document.getElementById('pedidoForm').reset();
   });
   
-  const languageBtn = document.getElementById('languageBtn');
-  const languageMenu = document.getElementById('languageMenu');
-  const languageSelector = document.getElementById('languageSelector');
 
-  languageBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    languageMenu.classList.toggle('hidden');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!languageSelector.contains(e.target)) {
-      languageMenu.classList.add('hidden');
+  const translations = {
+    es: {
+      greeting: "Hola",
+      description: "Este es un sitio multilenguaje."
+    },
+    en: {
+      greeting: "Hello",
+      description: "This is a multilingual site."
     }
-  });
+  };
 
-  // Opcional: ocultar al salir con el mouse
-  languageSelector.addEventListener('mouseleave', () => {
-    languageMenu.classList.add('hidden');
+  function changeLanguage(lang) {
+    localStorage.setItem("selectedLanguage", lang);
+    applyTranslations(lang);
+  }
+
+  function applyTranslations(lang) {
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      el.textContent = translations[lang][key] || key;
+    });
+  }
+
+  // Cargar idioma guardado al cargar la página
+  document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("selectedLanguage") || "es";
+    applyTranslations(savedLang);
   });
