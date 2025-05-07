@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
   }
   
   body {
@@ -542,23 +543,26 @@
 /*----------------Redes y publicacion---------------------*/
 /* Contenedor general en 2 columnas */
 .seccion-redes {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
+  border: 0px;
   max-width: 1200px;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 0 auto;
 }
 
 /* Publicaciones de Instagram a la izquierda */
 .instagram-feed {
   width: 55%;
-  height: 600px;
+  height: 460px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0px;
+  margin-top: 0px;
 }
 
 .instagram-feed iframe {
@@ -607,8 +611,42 @@
 .iconos a:hover {
   transform: scale(1.1);
 }
+/*--------------informacion de footer------------------------*/
+.container {
+  display: flex;
+  justify-content: center;  /* Centra las columnas horizontalmente */
+  align-items: flex-start;  /* Alinea las columnas al principio (arriba) del contenedor */
+  gap: 0px; /* Espacio entre las columnas */
+  margin-left: 140px;  /* Mueve el contenedor 50px hacia la izquierda */
+  margin-top: 0%;
+}
+.column {
+  width: 20%; /* Ancho de cada columna */
+}
+.column ul {
+  list-style-type: none; /* Quitar los puntos de las listas */
+  padding: 0;
+  margin: 0;
+}
+.column li {
+  margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+  color: rgba(100, 100, 100, 0.7);
+}
 
+.column li a {
+  text-decoration: none; /* Quitar el subrayado */
+  color: #777; /* Color gris */
+}
 
+.column5 ul {
+  list-style-type: none; /* Elimina los puntos o viñetas */
+  padding: 0; /* Elimina el padding de la lista */
+  margin: 0; /* Elimina el margen de la lista */
+}
 
-
-/*--------------------------------------*/
+.column5 li img {
+  text-decoration: none; /* Quitar el subrayado de los enlaces */ /* Transición suave para el color */
+  width: 100px; /* Establecer un tamaño específico de ancho */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+/* ------------------------------------------------------- */
