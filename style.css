@@ -21,14 +21,6 @@
   
  
   /* -----------------------VIDEO---------------------------- */
-
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-
   /* Hero con video */
   .hero {
     position: relative;
@@ -113,7 +105,7 @@
   }
 
   .contenido-extra p {
-    margin: 20px left  right; /* arriba, derecha, abajo, izquierda */
+    margin: 20px auto; /* arriba, derecha, abajo, izquierda */
     font-size: 1.1rem;
     max-width: 800px;
   }
@@ -173,7 +165,8 @@
     font-size: 20px;
   }
   
-  .nav-links li a:hover {
+  .nav-links li a:hover,
+  .nav-links li a.focus {
     background: #66a573;
     border-radius: 5px;
   }
@@ -200,7 +193,6 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.3s;
-
 }
 
 /* ---------------Estilos de íconos individuales --------------*/
