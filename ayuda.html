@@ -2,10 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Contacto - Vasos Biodegradables</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style.css">
 </head>
+<!-- Botón flotante del chatbot -->
+<button id="chatbot-toggle" class="chatbot-btn">💬</button>
+
+<!-- Caja del chatbot -->
+<div id="chatbot-box" class="chatbot-box hidden">
+  <div class="chat-header">Asistente Virtual</div>
+  <div class="chat-body" id="chat-body"></div>
+  <input type="text" id="chat-input" placeholder="Escribe tu pregunta..." />
+</div>
+
 <body>
   <header>
     <nav>
@@ -34,12 +44,51 @@
     </nav>
    </header>
 
-  <main>
-    
+   <main>
+    <section class="ayuda-layout">
+      <div class="imagen-lateral izquierda">
+        <img src="ayuda1.png" alt="Vaso ecológico 1">
+      </div>
+  
+      <section class="ayuda">
+        <h1>Centro de Ayuda</h1>
+  
+        <div class="faq">
+          <h2>Preguntas Frecuentes</h2>
+          <ul>
+            <li>
+              <strong>¿Cómo puedo hacer un pedido?</strong><br>
+              Puedes realizar un pedido desde la sección <a href="pedido.html"><b>Pedido</b></a>. Solo llena el formulario con tus datos y selecciona los productos que deseas.
+            </li>
+            <li>
+              <strong>¿Qué formas de pago aceptan?</strong><br>
+              Aceptamos pagos por transferencia, tarjetas de crédito y débito, y próximamente, pagos por PayPal.
+            </li>
+            <li>
+              <strong>¿Hacen envíos a todo el país?</strong><br>
+              Sí, realizamos envíos a toda la República Mexicana. Los costos varían según la ubicación.
+            </li>
+            <li>
+              <strong>¿Los vasos son 100% biodegradables?</strong><br>
+              Sí, nuestros vasos están hechos con materiales que se descomponen naturalmente sin dañar el medio ambiente.
+            </li>
+          </ul>
+        </div>
+  
+        <div class="contacto-extra">
+          <h2>¿Necesitas más ayuda?</h2>
+          <p>Si no encontraste la respuesta que buscabas, puedes <a href="contacto.html">contactarnos directamente</a> y con gusto resolveremos tus dudas.</p>
+        </div>
+      </section>
+  
+      <div class="imagen-lateral derecha">
+        <img src="ayuda2.png" alt="Vaso ecológico 2">
+      </div>
+    </section>
   </main>
-
   <footer>
     <p>&copy; 2025 Vasos BioDeliciosos</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
