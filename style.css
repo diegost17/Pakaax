@@ -210,7 +210,7 @@
 
 /* Ajuste del color del ícono */
 .social-icons a i {
-    color: white; /* El ícono será blanco */
+    color: rgb(255, 255, 255); /* El ícono será blanco */
 }
 
 /* Efecto hover */
@@ -641,4 +641,109 @@
   width: 100px; /* Establecer un tamaño específico de ancho */
   height: auto; /* Mantener la proporción de la imagen */
 }
+/* --------------------ARCHIVO NOSOTROS.HTML----------------------------------- */
+.nosotros-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nosotros-section h2 {
+  font-size: 2rem;
+  color: #2a7a2e;
+  margin-bottom: 1rem;
+}
+
+.quienes-somos, .normatividad, .impacto {
+  margin-bottom: 3rem;
+}
+
+.mision-vision-valores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  flex: 1 1 30%;
+  background-color: #f0f7f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #3a913f;
+}
+
+.card ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.impacto p strong {
+  color: #2a7a2e;
+}
+
+.fondo-nosotros {
+  background-image: url('nosotros1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Opcional: hace que la imagen quede fija al hacer scroll */
+}
+
+.normatividad-dos-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.imagen-normatividad {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.imagen-normatividad img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenido-normatividad {
+  flex: 1 1 55%;
+  align-items: justify;
+}
+
+.contenido-normatividad h2 {
+  color: #1a6d38;
+  font-size: 2rem;
+}
+
+.contenido-normatividad ul {
+  padding-left: 20px;
+  align-items: justify;
+}
+
+@media (max-width: 768px) {
+  .normatividad-dos-columnas {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenido-normatividad {
+    text-align: justify;
+  }
+
 /* ------------------------------------------------------- */
