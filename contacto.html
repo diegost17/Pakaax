@@ -35,10 +35,31 @@
    </header>
 
   <main>
-    <p><strong>Dirección:</strong> Av. Verde #123, Chalco, Estado de México</p>
-    <p><strong>Teléfono:</strong> 55 1234 5678</p>
-    <p><strong>Email:</strong> contacto@vasosbiodeliciosos.mx</p>
-  </main>
+  <section class="contacto-container">
+    <div class="info-contacto">
+      <h1>Contáctanos</h1>
+      <p><strong>Dirección:</strong> Av. Verde #123, Chalco, Estado de México</p>
+      <p><strong>Teléfono:</strong> 55 1234 5678</p>
+      <p><strong>Email:</strong> contacto@vasosbiodeliciosos.mx</p>
+    </div>
+
+    <div class="formulario-contacto">
+      <h2>Envíanos un mensaje</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+</main>
 
   <footer>
     <p>&copy; 2025 Vasos BioDeliciosos</p>

@@ -921,4 +921,74 @@ ul {
   font-size: 14px;
 }
 
-/*-----------------------------------------------*/
+/*------------ARCHIVO AYUDA.HTML-----------------------------------*/
+
+.contacto-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.info-contacto,
+.formulario-contacto {
+  flex: 1 1 400px;
+}
+
+.info-contacto h1,
+.formulario-contacto h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.info-contacto p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.formulario-contacto button {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #388e3c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contacto-container {
+    flex-direction: column;
+  }
+}
+
