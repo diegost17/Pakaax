@@ -378,7 +378,7 @@
     border: 1px solid #ccc;
   }
   
-  .pedido-formulario button {
+  .pedido-imagen button {
     margin-top: 20px;
     padding: 12px;
     background-color: #4CAF50;
@@ -405,6 +405,40 @@
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
+
+  .biodegradabilidad-info {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e6f4ea;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+}
+
+.biodegradabilidad-info h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.biodegradabilidad-info p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.biodegradabilidad-animacion img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 /*-----------------MISION, VISION Y VALORES---------------------*/
 
 .nosotros-section {

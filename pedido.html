@@ -42,31 +42,68 @@
     <section id="pedido" class="pedido-section">
       <div class="pedido-container">
         <div class="pedido-formulario">
-          <h2>Haz tu pedido</h2>
-          <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+  <h2>Haz tu pedido</h2>
+  <form>
+    <!-- Nombre -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <!-- Correo electrónico -->
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Número de celular -->
+    <label for="telefono">Número de celular:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <!-- Dirección -->
+    <label for="direccion">Dirección de entrega:</label>
+    <textarea id="direccion" name="direccion" rows="3" required></textarea>
+
+    <!-- Producto -->
+    <label for="producto">Producto:</label>
+    <select id="producto" name="producto" required>
+      <option value="">Selecciona un producto</option>
+      <option value="vaso-pequeno">Vaso pequeño</option>
+      <option value="vaso-mediano">Vaso mediano</option>
+      <option value="vaso-grande">Vaso grande</option>
+    </select>
+
+    <!-- Cantidad -->
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" required min="1">
+
+    <!-- Forma de pago -->
+    <label for="pago">Forma de pago:</label>
+    <select id="pago" name="pago" required>
+      <option value="">Selecciona una opción</option>
+      <option value="contra-entrega">Contra entrega</option>
+      <option value="transferencia">Transferencia</option>
+      <option value="efectivo">Efectivo</option>
+    </select>
+
     
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="producto">Producto:</label>
-            <select id="producto" name="producto" required>
-              <option value="">Selecciona un producto</option>
-              <option value="vaso-pequeno">Vaso pequeño</option>
-              <option value="vaso-mediano">Vaso mediano</option>
-              <option value="vaso-grande">Vaso grande</option>
-            </select>
-    
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" required>
-    
-            <button type="submit">Enviar pedido</button>
-          </form>
-        </div>
+  </form>
+</div>
+
     
         <div class="pedido-imagen">
-          <img src="pedido-imagen.jpg" alt="Imagen de vasos" />
+          <img src="pedido1.jpg" alt="Imagen de vasos" />
+
+          <!-- Botón de envío -->
+          <button type="submit">Enviar pedido</button>
+        </div>
+
+        <div class="biodegradabilidad-info">
+          <h3>🌱 100% Biodegradable con Agua</h3>
+          <p>
+            Nuestros vasos están diseñados para desintegrarse naturalmente con el agua en menos de 24 horas, sin dejar residuos tóxicos.
+            Son seguros, sostenibles y ayudan a reducir la contaminación plástica.
+          </p>
+          <div class="biodegradabilidad-animacion">
+            <img src="gota1.png" alt="Animación biodegradabilidad" />
+            <!-- Puedes usar un GIF representativo o una animación CSS si lo prefieres -->
+          </div>
         </div>
 
       </div>
