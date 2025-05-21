@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="google" content="notranslate">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>PAKAAX</title>
   <link rel="stylesheet" href="style.css">
@@ -28,7 +28,7 @@
             <span>🌎</span> Idioma
           </button>
           <div class="language-menu hidden" id="languageMenu">
-            <a href="#" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w40/mx.png" width="20"> Español</a>
+            <li id="google_translate_element"></li><a href="#" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w40/mx.png" width="20"> Español</a>
             <a href="#" class="lang-option" data-lang="en"><img src="https://flagcdn.com/w40/us.png" width="20"> English</a>
           </div>
         </div>
@@ -165,5 +165,22 @@
     <p>&copy; 2025 Vasos Eco-Comestibles</p>
   </footer>
   <script src="script.js"></script>
+  <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'es',
+        includedLanguages: 'es,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
